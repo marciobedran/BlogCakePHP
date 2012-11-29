@@ -15,7 +15,7 @@
        <td><?php echo $post['Post']['id']; ?></td>
        <td>
          <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id'])); ?>
-       <td>
+       </td>
        <td>
          <?php echo $this->Form->postLink(
            'Delete',
@@ -23,10 +23,10 @@
            array('confirm' => 'Are you sure?'));
          ?>
          <?php echo $this->Html->link('Edit', array('action' => 'edit', $post['Post']['id'])); ?>
-       <td>
+       </td>
        <td>
          <?php echo $post['Post']['created']; ?>
-       <td>
+       </td>
     </tr>
     <?php endforeach; ?> 
 
